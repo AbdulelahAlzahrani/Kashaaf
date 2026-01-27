@@ -49,7 +49,7 @@ const Footer = () => {
 
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1 md:text-right flex flex-col items-start md:items-end">
-                        <img src="/logo-final.png" alt="Kashaaf" className="h-50 w-auto mb-4" />
+                        <img src={`${import.meta.env.BASE_URL}logo-final.png`} alt="Kashaaf" className="h-50 w-auto mb-4" />
                     </div>
                 </div>
 

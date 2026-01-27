@@ -15,7 +15,11 @@ const Navbar = () => {
                     <div className="flex items-center">
                         {/* Logo */}
                         <div className="flex-shrink-0 cursor-pointer group mr-10">
-                            <img src="/logo-final.png" alt="Kashaaf" className="h-25 w-auto object-contain" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}logo-final.png`}
+                                alt="Kashaaf"
+                                className="h-25 w-auto object-contain"
+                            />
                         </div>
 
                         {/* Desktop Menu */}

@@ -10,10 +10,10 @@ const sentences = [
 ];
 
 const videos = [
-    "/videos/overwatch.mp4",
-    "/videos/cod.mp4",
-    "/videos/fc.mp4",
-    "/videos/valorant.mp4"
+    `${import.meta.env.BASE_URL}videos/overwatch.mp4`,
+    `${import.meta.env.BASE_URL}videos/cod.mp4`,
+    `${import.meta.env.BASE_URL}videos/fc.mp4`,
+    `${import.meta.env.BASE_URL}videos/valorant.mp4`
 ];
 
 const Hero = () => {
@@ -62,7 +62,7 @@ const Hero = () => {
                     {/* Logo Placeholder */}
                     <div className="w-64 md:w-80 mx-auto">
                         <img
-                            src="/logo-final.png"
+                            src={`${import.meta.env.BASE_URL}logo-final.png`}
                             alt="Kashaaf Logo"
                             className="w-full h-auto object-contain drop-shadow-2xl"
                         />
