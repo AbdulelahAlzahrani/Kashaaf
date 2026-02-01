@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown, Gamepad2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,19 +15,20 @@ const Navbar = () => {
                     {/* Left Side: Logo & Navigation */}
                     <div className="flex items-center">
                         {/* Logo */}
-                        <div className="flex-shrink-0 cursor-pointer group mr-10">
+                        <Link to="/" className="flex-shrink-0 cursor-pointer group mr-10">
                             <img
                                 src={`${import.meta.env.BASE_URL}logo-final.png`}
                                 alt="Kashaaf"
                                 className="h-25 w-auto object-contain"
                             />
-                        </div>
+                        </Link>
 
                         {/* Desktop Menu */}
                         <div className="hidden md:block">
                             <div className="flex items-baseline space-x-8">
                                 <a href="#" className="hover:text-gaming-primary transition-colors px-3 py-2 rounded-md font-medium">Feed</a>
                                 <a href="#" className="hover:text-gaming-primary transition-colors px-3 py-2 rounded-md font-medium">AI Coach</a>
+                                <Link to="/about" className="hover:text-gaming-primary transition-colors px-3 py-2 rounded-md font-medium">About</Link>
 
                                 {/* Games Dropdown */}
                                 <div
@@ -94,7 +96,8 @@ const Navbar = () => {
                     >
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:text-gaming-primary hover:bg-white/5">Feed</a>
-                            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:text-gaming-primary hover:bg-white/5">AI Page</a>
+                            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:text-gaming-primary hover:bg-white/5">AI Coach</a>
+                            <Link to="/about" className="block px-3 py-2 rounded-md text-base font-medium hover:text-gaming-primary hover:bg-white/5">About</Link>
                             <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:text-gaming-primary hover:bg-white/5">Games</a>
                             <div className="border-t border-white/10 mt-4 pt-4 flex flex-col space-y-3 px-3">
                                 <a href="#" className="w-full text-left text-white hover:text-gaming-primary font-medium block">Log in</a>
