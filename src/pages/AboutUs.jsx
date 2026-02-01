@@ -44,12 +44,12 @@ const AboutUs = () => {
                             {/* Left: Logo */}
                             <motion.div
                                 variants={itemVariants}
-                                className="w-full md:w-1/2 flex justify-center md:justify-end"
+                                className="w-full md:w-1/2 flex justify-center md:justify-center"
                             >
                                 <img
                                     src={`${import.meta.env.BASE_URL}logo-final.png`}
                                     alt="Kashaaf Logo"
-                                    className="w-64 md:w-80 h-auto object-contain drop-shadow-2xl"
+                                    className="w-80 md:w-[450px] h-auto object-contain drop-shadow-2xl"
                                 />
                             </motion.div>
 
