@@ -58,8 +58,8 @@ const AboutUs = () => {
                                 variants={itemVariants}
                                 className="w-full md:w-1/2 text-center md:text-left"
                             >
-                                <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gaming-primary to-gaming-secondary mb-4">
-                                    Kashaaf
+                                <h1 className="text-5xl md:text-7xl font-bold text-gaming-primary mb-4">
+                                    KASHAAF
                                 </h1>
                                 <h2 className="text-2xl md:text-3xl font-light text-gray-300 mb-6">
                                     The Future of Esports Talent Discovery
@@ -127,15 +127,6 @@ const AboutUs = () => {
                             </p>
                         </motion.div>
 
-                        {/* 4. Join CTA */}
-                        <motion.div variants={itemVariants} className="text-center mt-20 mb-10">
-                            <h2 className="text-4xl md:text-5xl font-black italic text-white mb-8 tracking-tighter">
-                                JOIN IN ON THE FUN NOW!
-                            </h2>
-                            <button className="px-10 py-4 bg-gaming-primary text-black font-bold text-xl rounded-full hover:bg-gaming-primary/80 transition-transform hover:scale-105 shadow-[0_0_20px_rgba(0,255,153,0.3)]">
-                                Sign Up Free
-                            </button>
-                        </motion.div>
 
                     </motion.div>
                 </div>
