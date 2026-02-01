@@ -43,6 +43,8 @@ const AboutUs = () => {
                         animate="visible"
                         className="max-w-4xl mx-auto"
                     >
+                        <br></br>
+                        <br></br>
                         {/* Header */}
                         <motion.div variants={itemVariants} className="text-center mb-20">
                             <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gaming-primary to-gaming-secondary mb-6">
@@ -106,8 +108,8 @@ const AboutUs = () => {
                                 <Target className="w-12 h-12 text-gaming-primary" />
                             </div>
                             <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
-                            <p className="text-2xl md:text-3xl font-light italic text-gray-200 leading-relaxed">
-                                "To become the leading platform for discovering and empowering esports talents in saudi arabia and the middle east, connecting players ,team ,investors."
+                            <p className="text-2xl md:text-3xl font-bold text-gray-200 leading-relaxed">
+                                "To become the leading platform for discovering and empowering esports talents in Saudi Arabia and the Middle East."
                             </p>
                         </motion.div>
 
