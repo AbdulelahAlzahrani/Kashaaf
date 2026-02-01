@@ -28,7 +28,7 @@ const Navbar = () => {
                             <div className="flex items-baseline space-x-8">
                                 <a href="#" className="hover:text-gaming-primary transition-colors px-3 py-2 rounded-md font-medium">Feed</a>
                                 <a href="#" className="hover:text-gaming-primary transition-colors px-3 py-2 rounded-md font-medium">AI Coach</a>
-                                <Link to="/about" className="hover:text-gaming-primary transition-colors px-3 py-2 rounded-md font-medium">About</Link>
+                                <Link to="/about" className="hover:text-gaming-primary transition-colors px-3 py-2 rounded-md font-medium">About Us</Link>
 
                                 {/* Games Dropdown */}
                                 <div

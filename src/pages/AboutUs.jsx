@@ -31,9 +31,9 @@ const AboutUs = () => {
             <Navbar />
             <main className="flex-grow pt-24 pb-16">
                 {/* Background Elements */}
+                {/* Background Elements */}
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-                    <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-gaming-primary/20 rounded-full blur-[100px]" />
-                    <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-gaming-secondary/20 rounded-full blur-[100px]" />
+                    {/* Bubbles removed as requested */}
                 </div>
 
                 <div className="relative z-10 container mx-auto px-4">
