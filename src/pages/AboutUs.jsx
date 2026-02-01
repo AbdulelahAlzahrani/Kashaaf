@@ -33,7 +33,7 @@ const AboutUs = () => {
             <Navbar />
             <main className="flex-grow pt-32 pb-16"> {/* Increased top padding */}
 
-                <div className="relative z-10 container mx-auto px-4 max-w-6xl"> {/* Increased max-width */}
+                <div className="relative z-10 container mx-auto px-4 max-w-7xl"> {/* Increased max-width */}
                     <motion.div
                         variants={containerVariants}
                         initial="hidden"
@@ -61,7 +61,7 @@ const AboutUs = () => {
                                 className="w-full md:w-1/2 text-center md:text-left"
                             >
                                 <h1 className="text-5xl md:text-7xl font-bold text-gaming-primary mb-4">
-                                    KASHAAF
+                                    What is KASHAAF?
                                 </h1>
                                 <h2 className="text-2xl md:text-3xl font-light text-gray-300 mb-6">
                                     The Future of Esports Talent Discovery
@@ -75,41 +75,73 @@ const AboutUs = () => {
                         {/* 2. Content Sections: Network & AI (Stacked Vertical) */}
                         <div className="space-y-16 mb-24 max-w-4xl mx-auto w-full">
                             {/* Professional Esports Network */}
+                            {/* Professional Esports Network */}
                             <motion.div
                                 variants={itemVariants}
                                 className="p-8 md:p-12 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-gaming-primary/50 transition-all"
                             >
-                                <div className="flex flex-col md:flex-row gap-8 items-start">
-                                    <div className="w-16 h-16 rounded-full bg-gaming-primary/20 flex items-center justify-center flex-shrink-0">
-                                        <Share2 className="text-gaming-primary w-8 h-8" />
+                                <div className="flex flex-col lg:flex-row gap-12 items-center">
+                                    <div className="flex-1">
+                                        <div className="flex flex-col md:flex-row gap-8 items-start">
+                                            <div className="w-16 h-16 rounded-full bg-gaming-primary/20 flex items-center justify-center flex-shrink-0">
+                                                <Share2 className="text-gaming-primary w-8 h-8" />
+                                            </div>
+                                            <div>
+                                                <h3 className="text-3xl font-bold mb-4 text-white">Professional Esports Network</h3>
+                                                <p className="text-gray-400 leading-relaxed text-lg">
+                                                    A dedicated space for the entire esports ecosystem—Players, Coaches, Referees, and Streamers.
+                                                    Showcase your journey, publish your professional CV, and share highlights that demonstrate your true skill level.
+                                                    Connect with like-minded professionals in a specialized environment built just for gaming.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h3 className="text-3xl font-bold mb-4 text-white">Professional Esports Network</h3>
-                                        <p className="text-gray-400 leading-relaxed text-lg">
-                                            A dedicated space for the entire esports ecosystem—Players, Coaches, Referees, and Streamers.
-                                            Showcase your journey, publish your professional CV, and share highlights that demonstrate your true skill level.
-                                            Connect with like-minded professionals in a specialized environment built just for gaming.
-                                        </p>
+                                    {/* Image 1 */}
+                                    <div className="w-full lg:w-[450px] flex-shrink-0">
+                                        <motion.img
+                                            whileHover={{ scale: 1.05, rotate: 0 }}
+                                            whileTap={{ scale: 0.95 }}
+                                            src={`${import.meta.env.BASE_URL}about_images/event-1.jpg`}
+                                            alt="Event 1"
+                                            onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}about_images/event-1.jpg`)}
+                                            className="w-full h-64 object-cover rounded-2xl border-2 border-white/10 shadow-2xl rotate-2 cursor-pointer hover:border-gaming-primary/50 transition-all duration-300"
+                                        />
                                     </div>
                                 </div>
                             </motion.div>
 
                             {/* AI-Powered Evolution */}
+                            {/* AI-Powered Evolution */}
                             <motion.div
                                 variants={itemVariants}
                                 className="p-8 md:p-12 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-gaming-secondary/50 transition-all"
                             >
-                                <div className="flex flex-col md:flex-row gap-8 items-start">
-                                    <div className="w-16 h-16 rounded-full bg-gaming-secondary/20 flex items-center justify-center flex-shrink-0">
-                                        <Cpu className="text-gaming-secondary w-8 h-8" />
+                                <div className="flex flex-col lg:flex-row gap-12 items-center">
+                                    <div className="flex-1">
+                                        <div className="flex flex-col md:flex-row gap-8 items-start">
+                                            <div className="w-16 h-16 rounded-full bg-gaming-secondary/20 flex items-center justify-center flex-shrink-0">
+                                                <Cpu className="text-gaming-secondary w-8 h-8" />
+                                            </div>
+                                            <div>
+                                                <h3 className="text-3xl font-bold mb-4 text-white">AI-Powered Evolution</h3>
+                                                <p className="text-gray-400 leading-relaxed text-lg">
+                                                    Transform from amateur to professional with our advanced AI analysis. Upload your gameplay footage and receive
+                                                    instant, data-driven ratings and varied advice. Our system designs a personalized professional development path
+                                                    tailored specifically to your current level and goals.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h3 className="text-3xl font-bold mb-4 text-white">AI-Powered Evolution</h3>
-                                        <p className="text-gray-400 leading-relaxed text-lg">
-                                            Transform from amateur to professional with our advanced AI analysis. Upload your gameplay footage and receive
-                                            instant, data-driven ratings and varied advice. Our system designs a personalized professional development path
-                                            tailored specifically to your current level and goals.
-                                        </p>
+                                    {/* Image 2 */}
+                                    <div className="w-full lg:w-[450px] flex-shrink-0">
+                                        <motion.img
+                                            whileHover={{ scale: 1.05, rotate: 0 }}
+                                            whileTap={{ scale: 0.95 }}
+                                            src={`${import.meta.env.BASE_URL}about_images/event-2.jpg`}
+                                            alt="Event 2"
+                                            onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}about_images/event-2.jpg`)}
+                                            className="w-full h-64 object-cover rounded-2xl border-2 border-white/10 shadow-2xl rotate-[-2deg] cursor-pointer hover:border-gaming-secondary/50 transition-all duration-300"
+                                        />
                                     </div>
                                 </div>
                             </motion.div>
@@ -130,27 +162,7 @@ const AboutUs = () => {
                         </motion.div>
 
                         {/* 4. Event Photos */}
-                        <motion.div
-                            variants={itemVariants}
-                            className="flex justify-center md:justify-end gap-8 mt-20 flex-wrap"
-                        >
-                            <motion.img
-                                whileHover={{ scale: 1.05, rotate: 0 }}
-                                whileTap={{ scale: 0.95 }}
-                                src={`${import.meta.env.BASE_URL}about_images/event-1.jpg`}
-                                alt="Event 1"
-                                onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}about_images/event-1.jpg`)}
-                                className="w-full md:w-[500px] h-64 md:h-[350px] object-cover rounded-2xl border-2 border-white/10 shadow-2xl rotate-[-2deg] cursor-pointer hover:border-gaming-primary/50 transition-all duration-300 hover:shadow-gaming-primary/20 hover:z-10"
-                            />
-                            <motion.img
-                                whileHover={{ scale: 1.05, rotate: 0 }}
-                                whileTap={{ scale: 0.95 }}
-                                src={`${import.meta.env.BASE_URL}about_images/event-2.jpg`}
-                                alt="Event 2"
-                                onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}about_images/event-2.jpg`)}
-                                className="w-full md:w-[500px] h-64 md:h-[350px] object-cover rounded-2xl border-2 border-white/10 shadow-2xl rotate-[2deg] cursor-pointer hover:border-gaming-secondary/50 transition-all duration-300 hover:shadow-gaming-secondary/20 hover:z-10"
-                            />
-                        </motion.div>
+
 
                     </motion.div>
                 </div>
