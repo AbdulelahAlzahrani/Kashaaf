@@ -108,7 +108,7 @@ const AboutUs = () => {
                                 <Target className="w-12 h-12 text-gaming-primary" />
                             </div>
                             <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
-                            <p className="text-2xl md:text-3xl font-bold text-gray-200 leading-relaxed">
+                            <p className="text-xl md:text-2xl font-bold text-gray-200 leading-relaxed">
                                 "To become the leading platform for discovering and empowering esports talents in Saudi Arabia and the Middle East."
                             </p>
                         </motion.div>
