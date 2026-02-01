@@ -73,7 +73,7 @@ const AboutUs = () => {
                         </div>
 
                         {/* 2. Content Sections: Network & AI (Stacked Vertical) */}
-                        <div className="space-y-16 mb-24 max-w-4xl mx-auto w-full">
+                        <div className="space-y-24 mb-32 w-full">
                             {/* Professional Esports Network */}
                             {/* Professional Esports Network */}
                             {/* Professional Esports Network */}
