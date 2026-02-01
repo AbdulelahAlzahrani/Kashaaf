@@ -127,6 +127,23 @@ const AboutUs = () => {
                             </p>
                         </motion.div>
 
+                        {/* 4. Event Photos */}
+                        <motion.div
+                            variants={itemVariants}
+                            className="flex justify-end gap-6 mt-16"
+                        >
+                            <img
+                                src={`${import.meta.env.BASE_URL}about_images/event-1.jpg`}
+                                alt="Event 1"
+                                className="w-64 h-48 object-cover rounded-xl border border-white/10 shadow-lg rotate-[-3deg] hover:rotate-0 transition-all duration-300 hover:scale-110 hover:z-10"
+                            />
+                            <img
+                                src={`${import.meta.env.BASE_URL}about_images/event-2.jpg`}
+                                alt="Event 2"
+                                className="w-64 h-48 object-cover rounded-xl border border-white/10 shadow-lg rotate-[3deg] hover:rotate-0 transition-all duration-300 hover:scale-110 hover:z-10"
+                            />
+                        </motion.div>
+
 
                     </motion.div>
                 </div>
