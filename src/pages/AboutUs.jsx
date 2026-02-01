@@ -127,6 +127,16 @@ const AboutUs = () => {
                             </p>
                         </motion.div>
 
+                        {/* 4. Join CTA */}
+                        <motion.div variants={itemVariants} className="text-center mt-20 mb-10">
+                            <h2 className="text-4xl md:text-5xl font-black italic text-white mb-8 tracking-tighter">
+                                JOIN IN ON THE FUN NOW!
+                            </h2>
+                            <button className="px-10 py-4 bg-gaming-primary text-black font-bold text-xl rounded-full hover:bg-gaming-primary/80 transition-transform hover:scale-105 shadow-[0_0_20px_rgba(0,255,153,0.3)]">
+                                Sign Up Free
+                            </button>
+                        </motion.div>
+
                     </motion.div>
                 </div>
             </main>
